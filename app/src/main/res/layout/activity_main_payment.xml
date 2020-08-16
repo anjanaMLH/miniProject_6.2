@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        tools:ignore="MissingClass">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+
+            app:toolbarId="@+id/toolbar">
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></androidx.appcompat.widget.Toolbar
+
+                >
+
+            <ImageView
+                android:id="@+id/menu"
+                android:layout_width="50dp"
+                android:layout_height="76dp"
+                android:layout_marginTop="25dp"
+
+                app:srcCompat="@drawable/menu" />
+
+            <ImageView
+                android:id="@+id/shopping_cart"
+                android:layout_width="50dp"
+                android:layout_height="76dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="335dp"
+
+                app:srcCompat="@drawable/shopping_cart" />
+
+            <TextView
+                android:id="@+id/logo_part1"
+                android:layout_width="123dp"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:text="@string/logo_part1"
+                android:layout_marginLeft="125dp"
+                android:layout_marginTop="45dp"
+                android:textSize="24sp"
+                android:textStyle="italic"
+                />
+
+            <TextView
+                android:id="@+id/logo_part2"
+                android:layout_width="123dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="199dp"
+                android:layout_marginTop="50dp"
+                android:text="@string/logo_part2"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="italic"
+
+                />
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:id="@+id/Supplier_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="120dp"
+        android:text="FOOD ITEMS"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="normal" />
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="380dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/border_bottom2"
+        app:cardBackgroundColor="#E2EFE9E9">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="10dp"
+            android:contentDescription="@string/image_pizza"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/pizza"
+
+            />
+
+        <TextView
+            android:id="@+id/name_pizza"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="5dp"
+
+            android:text="@string/name_pizza"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/name_pizza_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="70dp"
+
+            android:text="@string/price_1"
+            android:textColor="#ED0F0F"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/name_pizza_price_old"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="70dp"
+
+            android:text="@string/price_2"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/discount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="208dp"
+            android:layout_marginTop="10dp"
+
+            android:text="@string/discount_14"
+            android:textColor="#ED0F0F"
+            android:textSize="15sp" />
+
+
+
+        <Button
+            android:id="@+id/add_cart1"
+            android:layout_width="100dp"
+            android:layout_height="32dp"
+            android:background="#F44336"
+            android:layout_marginLeft="270dp"
+            android:layout_marginTop="62dp"
+            android:text="@string/add_to_cart">
+
+        </Button>
+
+
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="380dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="320dp"
+        android:background="@drawable/border_bottom2"
+        app:cardBackgroundColor="#E2EFE9E9">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/pizza3"
+            android:contentDescription="@string/image_pizza"
+
+            tools:srcCompat="@drawable/best_lasagna_550" />
+
+        <TextView
+            android:id="@+id/name_pizza2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="5dp"
+
+            android:text="@string/pizza2"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/name_pizza_price2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="70dp"
+
+            android:text="@string/price_3"
+            android:textColor="#ED0F0F"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/name_pizza_price_old2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="70dp"
+
+            android:text="@string/price_4"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+
+
+        <TextView
+            android:id="@+id/discount2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="208dp"
+            android:layout_marginTop="10dp"
+
+            android:text="@string/discount_14"
+            android:textColor="#ED0F0F"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/add_cart"
+            android:layout_width="100dp"
+            android:layout_height="32dp"
+            android:background="#F44336"
+            android:layout_marginLeft="270dp"
+            android:layout_marginTop="62dp"
+            android:text="@string/add_to_cart">
+
+        </Button>
+
+
+
+
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="380dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="445dp"
+        android:background="@drawable/border_bottom2"
+        app:cardBackgroundColor="#E2EFE9E9">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/pizza"
+            android:contentDescription="@string/image_pizza"
+
+            tools:srcCompat="@drawable/reddot_burger" />
+
+        <TextView
+            android:id="@+id/name_pizza3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="5dp"
+
+            android:text="@string/name_pizza"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/name_pizza_price3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="70dp"
+
+            android:text=" Rs: 430"
+            android:textColor="#ED0F0F"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/name_pizza_price_old3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="70dp"
+
+            android:text=" Rs: 500"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/discount3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="208dp"
+            android:layout_marginTop="10dp"
+
+            android:text="discount 14%"
+            android:textColor="#ED0F0F"
+            android:textSize="15sp" />
+
+
+
+        <Button
+            android:id="@+id/add_cart3"
+            android:layout_width="100dp"
+            android:layout_height="32dp"
+            android:background="#F44336"
+            android:layout_marginLeft="270dp"
+            android:layout_marginTop="62dp"
+            android:text="Add to cart">
+
+        </Button>
+
+
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="380dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="565dp"
+        android:background="@drawable/border_bottom2"
+        app:cardBackgroundColor="#E2EFE9E9">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/pizza"
+            android:contentDescription="@string/image_pizza"
+
+            tools:srcCompat="@drawable/tiramisu_cake_25_500x500" />
+
+        <TextView
+            android:id="@+id/name_pizza4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="5dp"
+
+            android:text="@string/name_pizza"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/name_pizza_price4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="70dp"
+
+            android:text=" Rs: 430"
+            android:textColor="#ED0F0F"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/name_pizza_price_old4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="70dp"
+
+            android:text=" Rs: 500"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/discount4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="208dp"
+            android:layout_marginTop="10dp"
+
+            android:text="discount 14%"
+            android:textColor="#ED0F0F"
+            android:textSize="15sp" />
+
+
+
+        <Button
+            android:id="@+id/add_cart4"
+            android:layout_width="100dp"
+            android:layout_height="32dp"
+            android:background="#F44336"
+            android:layout_marginLeft="270dp"
+            android:layout_marginTop="62dp"
+            android:text="Add to cart">
+
+        </Button>
+
+
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+
+
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_alignParentBottom="true"
+
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="-1dp"
+            app:backgroundTint="@color/design_default_color_background"
+            app:itemIconTint="@color/design_default_color_error"
+
+            >
+
+            <ImageView
+                android:id="@+id/home"
+                android:layout_width="50dp"
+                android:layout_height="73dp"
+
+
+                app:srcCompat="@drawable/home3" />
+
+            <ImageView
+                android:id="@+id/delivery"
+                android:layout_width="50dp"
+                android:layout_height="76dp"
+                android:layout_marginLeft="110dp"
+
+
+                app:srcCompat="@drawable/delivery" />
+
+            <ImageView
+                android:id="@+id/profile"
+                android:layout_width="50dp"
+                android:layout_height="73dp"
+                android:layout_marginLeft="225dp"
+
+                app:srcCompat="@drawable/profile" />
+
+            <ImageView
+                android:id="@+id/supplier"
+                android:layout_width="50dp"
+                android:layout_height="73dp"
+                android:layout_marginLeft="330dp"
+
+                app:srcCompat="@drawable/provider" />
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>

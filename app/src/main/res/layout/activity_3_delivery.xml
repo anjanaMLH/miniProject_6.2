@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ti"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity3_delivery">
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="201dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="56dp"
+        android:text="Order Details"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="443dp"
+        android:layout_height="89dp"
+        android:background="@color/design_default_color_error"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="-9dp" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="153dp"
+        android:layout_height="38dp"
+        android:text="QUICK CHEF"
+        android:textColor="#FDFCFC"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="128dp"
+        tools:layout_editor_absoluteY="24dp" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="44dp"
+        android:layout_height="38dp"
+        android:tint="@color/design_default_color_background"
+        app:srcCompat="@drawable/ic_baseline_menu_24"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="24dp" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="47dp"
+        android:layout_height="43dp"
+        android:tint="@color/design_default_color_background"
+        app:srcCompat="@drawable/ic_baseline_add_shopping_cart_24"
+        tools:layout_editor_absoluteX="348dp"
+        tools:layout_editor_absoluteY="19dp" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="164dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="44dp"
+        android:text="Name             :"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="184dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="36dp"
+        android:text="Delivery location     :"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/textInputEditText9"
+        android:layout_width="136dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.634"
+        app:layout_constraintStart_toEndOf="@+id/textView19"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/textInputEditText12"
+        android:layout_width="143dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.583"
+        app:layout_constraintStart_toEndOf="@+id/textView20"
+        app:layout_constraintTop_toBottomOf="@+id/textInputEditText9" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="165dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="60dp"
+        android:text="Contact number    :"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/textInputEditText14"
+        android:layout_width="143dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.157"
+        app:layout_constraintStart_toEndOf="@+id/textView21"
+        app:layout_constraintTop_toBottomOf="@+id/textInputEditText12" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="466dp"
+        android:layout_height="125dp"
+        android:background="@color/design_default_color_error"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.392"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="72dp"
+        android:text="BACK"
+        app:layout_constraintBottom_toTopOf="@+id/textView22"
+        app:layout_constraintEnd_toStartOf="@+id/button7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView21"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:text="DELETE"
+        app:layout_constraintBottom_toTopOf="@+id/textView22"
+        app:layout_constraintEnd_toStartOf="@+id/button8"
+        app:layout_constraintHorizontal_bias="0.63"
+        app:layout_constraintStart_toEndOf="@+id/button6"
+        app:layout_constraintTop_toBottomOf="@+id/textView21"
+        app:layout_constraintVertical_bias="0.389" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginRight="35dp"
+        android:text="SUBMIT"
+        app:layout_constraintBottom_toTopOf="@+id/textView22"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button7"
+        app:layout_constraintTop_toBottomOf="@+id/textInputEditText14"
+        app:layout_constraintVertical_bias="0.32" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="50dp"
+        android:layout_height="62dp"
+        android:layout_marginEnd="350dp"
+        android:layout_marginRight="350dp"
+        android:tint="@color/design_default_color_background"
+        app:layout_constraintEnd_toEndOf="@+id/textView22"
+        app:srcCompat="@drawable/ic_baseline_home_24"
+        tools:layout_editor_absoluteY="670dp" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="51dp"
+        android:layout_height="44dp"
+        android:tint="@color/design_default_color_background"
+        app:srcCompat="@drawable/ic_baseline_directions_bike_24"
+        tools:layout_editor_absoluteX="149dp"
+        tools:layout_editor_absoluteY="680dp" />
+
+    <ImageView
+        android:id="@+id/imageView22"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:tint="@color/design_default_color_background"
+        app:srcCompat="@drawable/ic_baseline_account_circle_24"
+        tools:layout_editor_absoluteX="252dp"
+        tools:layout_editor_absoluteY="676dp" />
+
+    <ImageView
+        android:id="@+id/imageView23"
+        android:layout_width="55dp"
+        android:layout_height="61dp"
+        android:tint="@color/design_default_color_background"
+        app:srcCompat="@drawable/ic_baseline_insert_emoticon_24"
+        tools:layout_editor_absoluteX="340dp"
+        tools:layout_editor_absoluteY="670dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
