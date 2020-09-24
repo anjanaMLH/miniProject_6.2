@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_Customer);
+        setContentView(R.layout.activity_main_customer);
 
         Spinner spinner1 = (Spinner)findViewById(R.id.item);
 

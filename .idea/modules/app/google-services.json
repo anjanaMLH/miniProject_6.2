@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "418388441696",
+    "firebase_url": "https://quick-chef-6beff.firebaseio.com",
+    "project_id": "quick-chef-6beff",
+    "storage_bucket": "quick-chef-6beff.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:418388441696:android:6ea0241327435fe31e6105",
+        "android_client_info": {
+          "package_name": "com.example.mad_project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "418388441696-meirr79v4sbl11bkcf307qhiiuc6e7ro.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mad_project",
+            "certificate_hash": "0a50edd3fd8a162c65668e9b0c0b96fff82aa501"
+          }
+        },
+        {
+          "client_id": "418388441696-url1pbuso0dhkfq3559tq1h6fifqs6ik.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDis32g55SCpmOKRyK7gzJLAxFYe8YMbbo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "418388441696-url1pbuso0dhkfq3559tq1h6fifqs6ik.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

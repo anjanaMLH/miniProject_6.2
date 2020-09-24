@@ -15,11 +15,11 @@ public class MainActivity_supplier extends AppCompatActivity {
         setContentView(R.layout.activity_main_supplier);
 
         Button button = findViewById(R.id.button_main);
-                button.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        Intent intent = new Intent(MainActivity_supplier.this, Register_supplier.class);
-                        startActivity(intent);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity_supplier.this, Register_supplier.class);
+                startActivity(intent);
             }
         });
 
