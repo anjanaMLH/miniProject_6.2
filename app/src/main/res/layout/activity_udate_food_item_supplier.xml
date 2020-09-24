@@ -189,7 +189,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
                 android:background="@color/colorPrimaryDark"
-                android:text="Update">
+                android:onClick="btnUpdate"
+                android:text="@string/update">
 
             </Button>
 
