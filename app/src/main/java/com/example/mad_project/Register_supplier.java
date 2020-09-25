@@ -36,6 +36,7 @@ public class Register_supplier extends AppCompatActivity {
         re_password = (EditText) findViewById(R.id.new_password_edit_view) ;
         supplier = new Supplier();
         ref = FirebaseDatabase.getInstance().getReference().child("Supplier");
+
         ref.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {

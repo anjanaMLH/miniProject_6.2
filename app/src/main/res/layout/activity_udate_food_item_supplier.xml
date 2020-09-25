@@ -116,7 +116,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <EditText
-                android:id="@+id/name_item_edit_view"
+                android:id="@+id/name_item_edit_view_update"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
@@ -125,7 +125,7 @@
                 android:inputType="textPersonName" />
 
             <TextView
-                android:id="@+id/price_old"
+                android:id="@+id/price_old_update"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
@@ -134,7 +134,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <EditText
-                android:id="@+id/price_old_edit_view"
+                android:id="@+id/price_old_edit_view_update"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_alignTop="@+id/textView"
@@ -144,7 +144,7 @@
                 android:inputType="textPersonName" />
 
             <TextView
-                android:id="@+id/new_price"
+                android:id="@+id/new_price_update"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
@@ -153,7 +153,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <EditText
-                android:id="@+id/new_price_edit_view"
+                android:id="@+id/new_price_edit_view_update"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_alignTop="@+id/textView"
@@ -163,7 +163,7 @@
                 android:inputType="textPersonName" />
 
             <TextView
-                android:id="@+id/quantity"
+                android:id="@+id/quantity_update"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
@@ -172,7 +172,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <EditText
-                android:id="@+id/quantity_edit_view"
+                android:id="@+id/quantity_edit_view_update"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_alignTop="@+id/textView"
@@ -184,7 +184,7 @@
 
 
             <Button
-                android:id="@+id/register"
+                android:id="@+id/update"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"

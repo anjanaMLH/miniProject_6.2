@@ -69,9 +69,9 @@ public class Supplier_page extends AppCompatActivity {
                 Intent update = new Intent(Supplier_page.this,Udate_food_item_supplier.class);
                 Products p = (Products) adapterView.getItemAtPosition(i);
                 update.putExtra("name",p.getItem_name());
-                update.putExtra("old_price", p.getOld_price());
-                update.putExtra("new_price", p.getNew_price());
-                update.putExtra("quantity", p.getQantity());
+                update.putExtra("old_price", p.getOld_price().toString());
+                update.putExtra("new_price", p.getNew_price().toString());
+                update.putExtra("quantity", p.getQantity().toString());
                 startActivity(update);
             }
         });
