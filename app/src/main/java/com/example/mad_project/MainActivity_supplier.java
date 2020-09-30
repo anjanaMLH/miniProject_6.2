@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.mad_project.customer.CustomerHome;
+
 public class MainActivity_supplier extends AppCompatActivity {
 
     @Override
@@ -37,6 +39,17 @@ public class MainActivity_supplier extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity_supplier.this,payment_one.class);
+                startActivity(intent);
+            }
+        });
+
+        //This is the customer part;
+
+        View customerButtom = findViewById(R.id.home);
+        customerButtom.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent= new Intent (MainActivity_supplier.this, CustomerHome.class);
                 startActivity(intent);
             }
         });
