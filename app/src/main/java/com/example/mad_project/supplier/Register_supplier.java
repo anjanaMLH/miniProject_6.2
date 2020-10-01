@@ -1,4 +1,4 @@
-package com.example.mad_project;
+package com.example.mad_project.supplier;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,9 +9,9 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.mad_project.R;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -24,7 +24,7 @@ public class Register_supplier extends AppCompatActivity {
 
     EditText full_name,address,e_mail,password;
     String full_name_valid,address_valid,e_mail_valid,password_valid;
-    Button button_reg;
+    Button button_reg,button_logout;
     DatabaseReference ref;
     Supplier supplier;
     long maxID = 0;
@@ -53,6 +53,8 @@ public class Register_supplier extends AppCompatActivity {
 
             }
         });
+
+
 
 
 
@@ -116,7 +118,7 @@ public class Register_supplier extends AppCompatActivity {
 
         ref.child(String.valueOf(maxID+1)).setValue(supplier);
 
-        Intent intent = new Intent(Register_supplier.this, Supplier_page.class);
+        Intent intent = new Intent(Register_supplier.this, Login_Supplier.class);
         startActivity(intent);
     }
 

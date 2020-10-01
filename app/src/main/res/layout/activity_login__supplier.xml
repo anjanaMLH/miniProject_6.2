@@ -165,7 +165,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
                 android:background="@color/colorPrimaryDark"
-                android:text="@string/register">
+                android:text="@string/login">
 
             </Button>
 

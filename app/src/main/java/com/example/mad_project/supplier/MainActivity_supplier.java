@@ -1,4 +1,4 @@
-package com.example.mad_project;
+package com.example.mad_project.supplier;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,7 +7,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.mad_project.R;
 import com.example.mad_project.customer.CustomerHome;
+import com.example.mad_project.payment_one;
 
 public class MainActivity_supplier extends AppCompatActivity {
 
@@ -29,7 +31,7 @@ public class MainActivity_supplier extends AppCompatActivity {
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity_supplier.this,Login_Supplier.class);
+                Intent intent = new Intent(MainActivity_supplier.this, Login_Supplier.class);
                 startActivity(intent);
             }
         });
@@ -38,7 +40,7 @@ public class MainActivity_supplier extends AppCompatActivity {
         view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity_supplier.this,payment_one.class);
+                Intent intent = new Intent(MainActivity_supplier.this, payment_one.class);
                 startActivity(intent);
             }
         });
