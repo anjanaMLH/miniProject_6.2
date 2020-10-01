@@ -62,6 +62,7 @@
     <string name="quantity">Quantity</string>
     <string name="restaurant">Restaurant</string>
     <string name="update">Update</string>
+    <string name="delete">delete</string>
 
     <string-array name="food">
         <item>Burger</item>

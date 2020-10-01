@@ -83,14 +83,14 @@
     <ScrollView
         android:id="@+id/main_scroll_bar"
         android:layout_width="380dp"
-        android:layout_height="wrap_content"
+        android:layout_height="650dp"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="110dp"
         android:scrollbars="vertical">
 
         <LinearLayout
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
+            android:layout_height="920dp"
             android:orientation="vertical">
 
             <TextView
@@ -98,20 +98,19 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
-                android:layout_marginBottom="5dp"
                 android:layout_marginLeft="90dp"
+                android:layout_marginBottom="5dp"
                 android:text="@string/update_item"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:textSize="30sp" />
-
 
 
             <TextView
                 android:id="@+id/name_item"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
                 android:layout_alignParentTop="true"
+                android:layout_marginTop="20dp"
                 android:text="@string/add_food_form_name"
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
@@ -141,7 +140,7 @@
                 android:layout_centerHorizontal="true"
                 android:layout_toRightOf="@+id/textView"
                 android:hint="Enter the old price.."
-                android:inputType="textPersonName" />
+                android:inputType="numberDecimal" />
 
             <TextView
                 android:id="@+id/new_price_update"
@@ -160,7 +159,7 @@
                 android:layout_centerHorizontal="true"
                 android:layout_toRightOf="@+id/textView"
                 android:hint="Enter the new price.."
-                android:inputType="textPersonName" />
+                android:inputType="numberDecimal" />
 
             <TextView
                 android:id="@+id/quantity_update"
@@ -179,8 +178,13 @@
                 android:layout_centerHorizontal="true"
                 android:layout_toRightOf="@+id/textView"
                 android:hint="Enter the quantity.."
-                android:inputType="textPersonName" />
+                android:inputType="number" />
 
+            <ImageView
+                android:id="@+id/image_update"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:background="@drawable/shopping_cart" />
 
 
             <Button
@@ -189,8 +193,20 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
                 android:background="@color/colorPrimaryDark"
-                android:onClick="btnUpdate"
+                android:clickable="true"
                 android:text="@string/update">
+
+            </Button>
+
+            <Button
+                android:id="@+id/delete"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimaryDark"
+                android:clickable="true"
+                android:text="@string/delete">
 
             </Button>
 
@@ -198,13 +214,7 @@
 
     </ScrollView>
 
-    <androidx.core.widget.NestedScrollView
-        android:id="@+id/bottom_navigation"
-        android:layout_width="match_parent"
 
-
-        android:layout_height="match_parent"
-        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
 
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
@@ -255,7 +265,7 @@
         </com.google.android.material.bottomnavigation.BottomNavigationView>
 
 
-    </androidx.core.widget.NestedScrollView>
+
 
 
 

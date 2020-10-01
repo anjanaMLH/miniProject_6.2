@@ -167,7 +167,7 @@
                 android:layout_centerHorizontal="true"
                 android:layout_toRightOf="@+id/textView"
                 android:hint="Enter Your Email.."
-                android:inputType="textPersonName" />
+                android:inputType="textEmailAddress"/>
 
             <TextView
                 android:id="@+id/password"
@@ -186,26 +186,9 @@
                 android:layout_centerHorizontal="true"
                 android:layout_toRightOf="@+id/textView"
                 android:hint="Enter Your Password.."
-                android:inputType="textPersonName" />
+                android:inputType="textPassword" />
 
-            <TextView
-                android:id="@+id/new_password"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_marginTop="10dp"
-                android:text="@string/form_register_re_enter_password"
-                android:textAppearance="?android:attr/textAppearanceLarge" />
 
-            <EditText
-                android:id="@+id/new_password_edit_view"
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/new_password"
-                android:layout_centerHorizontal="true"
-                android:layout_toRightOf="@+id/textView"
-                android:hint="Enter Your Password again.."
-                android:inputType="textPersonName" />
 
             <Button
                 android:id="@+id/register"
@@ -217,13 +200,12 @@
 
             </Button>
 
-            <androidx.core.widget.NestedScrollView
-                android:id="@+id/bottom_navigation"
-                android:layout_width="400dp"
+
+        </LinearLayout>
+
+    </ScrollView>
 
 
-                android:layout_height="match_parent"
-                app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
 
 
                 <com.google.android.material.bottomnavigation.BottomNavigationView
@@ -273,12 +255,9 @@
                 </com.google.android.material.bottomnavigation.BottomNavigationView>
 
 
-            </androidx.core.widget.NestedScrollView>
 
 
-        </LinearLayout>
 
-    </ScrollView>
 
 
 </RelativeLayout>

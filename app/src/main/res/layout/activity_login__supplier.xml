@@ -129,7 +129,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <EditText
-                android:id="@+id/email_edit_view"
+                android:id="@+id/email_edit_view_login"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_alignTop="@+id/email"
@@ -148,7 +148,7 @@
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <EditText
-                android:id="@+id/password_edit_view"
+                android:id="@+id/password_edit_view_login"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_alignTop="@+id/password"
@@ -160,7 +160,7 @@
 
 
             <Button
-                android:id="@+id/register"
+                android:id="@+id/login"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
@@ -169,16 +169,16 @@
 
             </Button>
 
-            <androidx.core.widget.NestedScrollView
-                android:id="@+id/bottom_navigation"
-                android:layout_width="480dp"
+
+        </LinearLayout>
+
+    </ScrollView>
 
 
-                android:layout_height="match_parent"
-                app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
 
 
-                <com.google.android.material.bottomnavigation.BottomNavigationView
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
                     android:layout_width="match_parent"
                     android:layout_height="72dp"
                     android:layout_alignParentBottom="true"
@@ -226,12 +226,8 @@
                 </com.google.android.material.bottomnavigation.BottomNavigationView>
 
 
-            </androidx.core.widget.NestedScrollView>
 
 
-        </LinearLayout>
-
-    </ScrollView>
 
 
 </RelativeLayout>
