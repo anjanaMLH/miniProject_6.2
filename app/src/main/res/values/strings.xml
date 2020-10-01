@@ -62,7 +62,18 @@
     <string name="quantity">Quantity</string>
     <string name="restaurant">Restaurant</string>
     <string name="update">Update</string>
+    
+  
+
+
     <string name="delete">delete</string>
+
+    <string name="customer_register_button_text">REGISTER AS CUSTOMER</string>
+    <string name="login_as_customer">LOGIN AS CUSTOMER</string>
+    <string name="login">Login</string>
+    <string name="customer_registration_title">REGISTER AS CUSTOMER</string>
+    <string name="log_out"><u>Log Out</u></string>
+
 
     <string-array name="food">
         <item>Burger</item>
