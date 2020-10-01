@@ -6,9 +6,27 @@ public class Products {
     private Double new_price;
     private Integer quantity;
     private int position;
+    private String image_uri;
+    private String key;
+
+    public String getKey() {
+        return key;
+    }
+
+    public void setKey(String key) {
+        this.key = key;
+    }
 
     public Products(){
         //empty constructor
+    }
+
+    public String getImage_uri() {
+        return image_uri;
+    }
+
+    public void setImage_uri(String image_uri) {
+        this.image_uri = image_uri;
     }
 
     public Products(int position){
