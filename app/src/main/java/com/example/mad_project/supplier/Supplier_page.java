@@ -1,4 +1,4 @@
-package com.example.mad_project;
+package com.example.mad_project.supplier;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,10 +6,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.example.mad_project.R;
 import com.firebase.ui.database.FirebaseListAdapter;
 import com.firebase.ui.database.FirebaseListOptions;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -18,8 +20,6 @@ import com.google.firebase.database.Query;
 
 import com.example.mad_project.Models.Products;
 import com.squareup.picasso.Picasso;
-
-import org.w3c.dom.Text;
 
 public class Supplier_page extends AppCompatActivity {
 
@@ -86,7 +86,7 @@ public class Supplier_page extends AppCompatActivity {
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Intent update = new Intent(Supplier_page.this,Udate_food_item_supplier.class);
+                Intent update = new Intent(Supplier_page.this, Udate_food_item_supplier.class);
                 Products p = (Products) adapterView.getItemAtPosition(i);
                 update.putExtra("name",p.getItem_name());
                 update.putExtra("old_price", p.getOld_price().toString());
@@ -104,6 +104,15 @@ public class Supplier_page extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Supplier_page.this, Add_Product_supplier.class);
+                startActivity(intent);
+            }
+        });
+
+        Button button_logout = (Button) findViewById(R.id.logout_button);
+        button_logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Supplier_page.this, MainActivity_supplier.class);
                 startActivity(intent);
             }
         });

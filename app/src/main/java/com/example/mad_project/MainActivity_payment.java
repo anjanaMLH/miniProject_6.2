@@ -7,6 +7,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
+import com.example.mad_project.customer.CustomerHome;
+import com.example.mad_project.supplier.MainActivity_supplier;
+
 
 public class MainActivity_payment extends AppCompatActivity {
 
@@ -33,12 +36,21 @@ public class MainActivity_payment extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity_payment.this,MainActivity_supplier.class);
+                Intent intent = new Intent(MainActivity_payment.this, MainActivity_supplier.class);
                 startActivity(intent);
             }
 
         });
 
+
+        ImageView image_customer = (ImageView) findViewById(R.id.profile);
+        image_customer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity_payment.this, CustomerHome.class);
+                startActivity(intent);
+            }
+        });
 
 
 

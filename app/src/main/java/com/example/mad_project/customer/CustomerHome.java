@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.example.mad_project.MainActivity_supplier;
 import com.example.mad_project.R;
 import com.example.mad_project.payment_one;
 
