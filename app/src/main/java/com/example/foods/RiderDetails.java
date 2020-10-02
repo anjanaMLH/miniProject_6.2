@@ -67,7 +67,7 @@ public class RiderDetails extends AppCompatActivity {
 
 
                         //dbRef.push().setValue(std);
-                        dbRef.child("od1").setValue(rd);
+                        dbRef.child("rd1").setValue(rd);
 
                         Toast.makeText(getApplicationContext(), "Data saved success", Toast.LENGTH_SHORT).show();
                         Intent i=new Intent(new Intent (RiderDetails.this, Activity3.class));
@@ -122,7 +122,7 @@ public class RiderDetails extends AppCompatActivity {
         btnshow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                DatabaseReference readRef = FirebaseDatabase.getInstance().getReference().child("Student").child("std1");
+                DatabaseReference readRef = FirebaseDatabase.getInstance().getReference().child("Rider").child("rd1");
                 readRef.addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
