@@ -21,7 +21,7 @@ public class RiderDetails extends AppCompatActivity {
 
 
     EditText EditTextridername,EditTextriderid,EditTextcontactnumber;
-    Button btnadd,btnupdate;
+    Button btnadd,btnupdate,btnshow;
     DatabaseReference dbRef;
     RiderInformation rd;
 
@@ -45,6 +45,7 @@ public class RiderDetails extends AppCompatActivity {
 
         btnadd= findViewById(R.id.btnsubmit);
         btnupdate= findViewById(R.id.btnupdate);
+        btnshow=findViewById(R.id.btnshow);
 
         rd = new RiderInformation();
 
@@ -118,6 +119,35 @@ public class RiderDetails extends AppCompatActivity {
                 });
             }
         });
+        btnshow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                DatabaseReference readRef = FirebaseDatabase.getInstance().getReference().child("Student").child("std1");
+                readRef.addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+
+                        if (dataSnapshot.hasChildren()) {
+                            EditTextridername.setText(dataSnapshot.child("rider_name").getValue().toString());
+                            EditTextriderid.setText(dataSnapshot.child("rider_id").getValue().toString());
+                            EditTextcontactnumber.setText(dataSnapshot.child("rider_contact_number").getValue().toString());
+
+                        } else
+                            Toast.makeText(getApplicationContext(), "No Source to display", Toast.LENGTH_SHORT).show();
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                    }
+
+                });
+            }
+        });
+
+
+
+
 
     }
 }

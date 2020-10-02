@@ -24,6 +24,7 @@
         android:background="@color/design_default_color_error"
         app:layout_constraintBottom_toTopOf="@+id/view6"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.464"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
@@ -62,8 +63,8 @@
         android:tint="@color/design_default_color_background"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.609"
-        app:layout_constraintStart_toEndOf="@+id/textView7"
+        app:layout_constraintHorizontal_bias="0.952"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.023"
         app:srcCompat="@drawable/ic_baseline_add_shopping_cart_24" />
@@ -72,14 +73,13 @@
         android:id="@+id/imageView18"
         android:layout_width="66dp"
         android:layout_height="51dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginBottom="16dp"
         android:tint="@color/design_default_color_background"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.037"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/view6"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.975"
         app:srcCompat="@drawable/ic_baseline_home_24" />
 
     <ImageView
@@ -134,7 +134,7 @@
         app:srcCompat="@drawable/download" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btndelivery"
         android:layout_width="253dp"
         android:layout_height="53dp"
         android:background="@android:color/holo_green_light"
