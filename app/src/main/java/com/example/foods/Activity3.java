@@ -12,6 +12,7 @@ import android.widget.Toast;
 
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+//Git commit
 
 public class Activity3 extends AppCompatActivity {
 
