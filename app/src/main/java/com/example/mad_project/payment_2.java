@@ -2,6 +2,7 @@ package com.example.mad_project;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -29,8 +30,8 @@ public class payment_2 extends AppCompatActivity {
 
         final payment paymentmodel = new payment();
 
-        Button registerBtn = (Button) findViewById(R.id.register);
-        registerBtn.setOnClickListener(new View.OnClickListener() {
+        Button  register = (Button) findViewById(R.id.register);
+        register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
@@ -48,9 +49,12 @@ public class payment_2 extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(),"Data saved succesfully",Toast.LENGTH_SHORT).show();
                 }catch (NumberFormatException e){
 
-                }
-            }
-        });
+                        }
+                Intent intent = new Intent(payment_2.this,payment_view.class);
+                startActivity(intent);
+                    }
+
+            });
 
 
 

@@ -9,48 +9,31 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-        <activity android:name=".supplier.Udate_food_item_supplier"/>
-
-        <activity android:name=".customer.CustomerOrders"></activity>
+        <activity android:name=".payment_view"></activity>
+        <activity android:name=".supplier.Udate_food_item_supplier" />
+        <activity android:name=".customer.CustomerOrders" />
         <activity android:name=".customer.CustomerRecipe" />
         <activity android:name=".customer.CustomerRegistration" />
         <activity android:name=".customer.CustomerLogin" />
         <activity android:name=".customer.CustomerHome" />
-
-
         <activity android:name=".supplier.Login_Supplier" />
         <activity android:name=".supplier.Add_Product_supplier" />
         <activity android:name=".supplier.Supplier_page" />
         <activity android:name=".supplier.Register_supplier" />
-        <activity android:name=".payment3" />
         <activity android:name=".payment_2" />
         <activity android:name=".payment_one" />
-
         <activity android:name=".MainActivity_payment">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
-		
-		<activity android:name=".Activity3_delivery"></activity>
+        <activity android:name=".Activity3_delivery" />
         <activity android:name=".RiderDetails_delivery" />
-        <activity android:name=".MainActivity_delivery"/>
-		<activity android:name=".MainActivity"/>
-		
-        <activity android:name=".supplier.MainActivity_supplier"/>
-
-
-
-
-
-           
-
-
+        <activity android:name=".MainActivity_delivery" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".supplier.MainActivity_supplier" />
     </application>
 
 </manifest>
