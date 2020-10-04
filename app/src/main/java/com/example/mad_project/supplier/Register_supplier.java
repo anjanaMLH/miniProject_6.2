@@ -22,8 +22,8 @@ import com.example.mad_project.Models.Supplier;
 
 public class Register_supplier extends AppCompatActivity {
 
-    EditText full_name,address,e_mail,password;
-    String full_name_valid,address_valid,e_mail_valid,password_valid;
+    EditText full_name,address,e_mail,password,re_password;
+    String full_name_valid,address_valid,e_mail_valid,password_valid,re_password_valid;
     Button button_reg,button_logout;
     DatabaseReference ref;
     Supplier supplier;
@@ -37,6 +37,7 @@ public class Register_supplier extends AppCompatActivity {
         address = (EditText) findViewById(R.id.address_edit_view);
         e_mail = (EditText) findViewById(R.id.email_edit_view);
         password = (EditText) findViewById(R.id.password_edit_view);
+        re_password = (EditText) findViewById(R.id.password_re_edit_view);
 
         supplier = new Supplier();
         ref = FirebaseDatabase.getInstance().getReference().child("Supplier");
@@ -53,10 +54,6 @@ public class Register_supplier extends AppCompatActivity {
 
             }
         });
-
-
-
-
 
         button_reg = findViewById(R.id.register);
         button_reg.setOnClickListener(new View.OnClickListener() {
@@ -89,6 +86,7 @@ public class Register_supplier extends AppCompatActivity {
             address_valid = address.getText().toString();
             e_mail_valid = e_mail.getText().toString();
             password_valid = password.getText().toString();
+            re_password_valid = re_password.getText().toString();
 
 
             if(TextUtils.isEmpty(full_name_valid)){
@@ -102,6 +100,9 @@ public class Register_supplier extends AppCompatActivity {
             }
             else if(TextUtils.isEmpty(password_valid)){
                 Toast.makeText(this, "Address field shouldn't be empty", Toast.LENGTH_SHORT).show();
+            }
+            else if(!password_valid.equals(re_password_valid)){
+                Toast.makeText(this, " password didn't match", Toast.LENGTH_SHORT).show();
             }
             else{
                 saveInformations();

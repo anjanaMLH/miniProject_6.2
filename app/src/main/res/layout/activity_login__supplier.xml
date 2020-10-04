@@ -155,7 +155,7 @@
                 android:layout_centerHorizontal="true"
                 android:layout_toRightOf="@+id/textView"
                 android:hint="Enter Your Password.."
-                android:inputType="textPersonName" />
+                android:inputType="textPassword" />
 
 
 
